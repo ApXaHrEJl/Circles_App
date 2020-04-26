@@ -1,7 +1,8 @@
 #include "scan.h"
 #include <stdio.h>
+#define N 1000
 
-figure circle[10];
+figure circle[N];
 
 int main(int argc, char** argv)
 {
