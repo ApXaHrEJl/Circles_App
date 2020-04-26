@@ -5,4 +5,4 @@ typedef struct {
 
 void check_line(int* i, int debug);
 
-void scan(char* str, figure* circle);
+int scan(char* str, figure* circle);

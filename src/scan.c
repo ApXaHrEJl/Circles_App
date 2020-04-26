@@ -12,10 +12,11 @@ void check_line(int* i, int debug)
             return;
         }
     }
-    *i++;
+    *i += 1;
+    return;
 }
 
-void scan(char* str, figure* circle)
+int scan(char* str, figure* circle)
 {
     FILE* file = fopen(str, "r");
     int i = 0;
@@ -30,4 +31,5 @@ void scan(char* str, figure* circle)
                 &circle[i].p[2]);
         check_line(&i, debug);
     } while (debug == 4);
+    return i;
 }
