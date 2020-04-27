@@ -22,8 +22,8 @@ int main(int argc, char** argv)
                circle[i].x,
                circle[i].y,
                circle[i].r);
-        printf("perimeter = %.3lf\n", perimeter(circle, i));
-        printf("area = %.3lf\n", area(circle, i));
+        printf("\tperimeter = %.3lf\n", perimeter(circle, i));
+        printf("\tarea = %.3lf\n", area(circle, i));
     }
     return 0;
 }
