@@ -1,5 +1,6 @@
 #ifndef H_PROPS
 #define H_PROPS
+#include "scan.h"
 #include <math.h>
 #include <stddef.h>
 

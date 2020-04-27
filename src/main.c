@@ -1,4 +1,3 @@
-#include "scan.h"
 #include "props.h"
 #include <stdio.h>
 #define N 1000
