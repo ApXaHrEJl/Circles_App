@@ -1,3 +1,5 @@
+#ifndef H_SCAN
+#define H_SCAN
 #include <stddef.h>
 
 typedef struct {
@@ -13,3 +15,4 @@ int check_line(char *line, int *number, figure *circle);
 size_t parse_coord(size_t *i, int *coord, char *line);
 
 size_t scan(char *str, figure *circle);
+#endif
