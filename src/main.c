@@ -1,4 +1,5 @@
 #include "scan.h"
+#include "props.h"
 #include <stdio.h>
 #define N 1000
 
@@ -21,6 +22,8 @@ int main(int argc, char** argv)
                circle[i].x,
                circle[i].y,
                circle[i].r);
+        printf("\tperimeter = %.3lf\n", perimeter(circle, i));
+        printf("\tarea = %.3lf\n", area(circle, i));
     }
     return 0;
 }
