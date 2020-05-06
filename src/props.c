@@ -35,7 +35,7 @@ void crossing_check(figure* circle, size_t n, size_t number)
         }
     }
     if (crs == 0) {
-        printf("\t\tnone");
+        printf("\t\tnone\n");
     }
 }
 
