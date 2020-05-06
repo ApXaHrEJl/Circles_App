@@ -29,14 +29,12 @@ void crossing_check(figure* circle, size_t n, size_t number)
     for (int i = 0; i < number; i++) {
         if (i != n) {
             if (crossing(circle, n, i) == 1) {
-                printf("\t\t%d. circle\n", i + 1);
+                if (crs == 0) {
+                    printf("\tintersects:\n");
+                }
                 crs = 1;
+                printf("\t\t%d. circle\n", i + 1);
             }
         }
     }
-    if (crs == 0) {
-        printf("\t\t");
-        printf("none\n");
-    }
 }
-
