@@ -15,5 +15,5 @@ build/main.o: src/main.c
 clean:
 	rm -rf build/*.o bin/circles_app
 
-.PHONY: all clean install uninstall
+.PHONY: all clean
 
