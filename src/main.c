@@ -23,7 +23,6 @@ int main(int argc, char** argv)
                circle[i].r);
         printf("\tperimeter = %.3lf\n", perimeter(circle, i));
         printf("\tarea = %.3lf\n", area(circle, i));
-        printf("\tintersects:\n");
         crossing_check(circle, i, number);
     }
     return 0;
