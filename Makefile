@@ -1,6 +1,4 @@
-all: bin/circles_app
-
-test: bin/test_app
+all: bin/circles_app bin/test_app
 
 bin/test_app: build/props.o build/scan.o build/main_test.o build/func_tests.o
 	gcc -Wall -Werror build/main_test.o build/props.o build/scan.o build/func_tests.o -o bin/test_app -lm
@@ -25,5 +23,5 @@ build/main.o: src/main.c
 clean:
 	rm -rf build/*.o bin/circles_app
 
-.PHONY: all clean test
+.PHONY: all clean
 
