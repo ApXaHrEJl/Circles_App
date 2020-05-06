@@ -10,9 +10,9 @@ typedef struct {
 
 void skip_char(size_t* i, char* line, size_t symb);
 
-int check_line(char* line, int* number, figure* circle);
-
 size_t parse_coord(size_t* i, int* coord, char* line);
+
+size_t scan_string(char* line, size_t number, figure* circle);
 
 size_t scan(char* str, figure* circle);
 #endif
