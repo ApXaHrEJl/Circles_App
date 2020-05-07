@@ -1,4 +1,5 @@
 all: bin/circles_app bin/test_app
+	./bin/test_app
 
 bin/test_app: build/props.o build/scan.o build/main_test.o build/func_tests.o
 	gcc -Wall -Werror build/main_test.o build/props.o build/scan.o build/func_tests.o -o bin/test_app -lm
