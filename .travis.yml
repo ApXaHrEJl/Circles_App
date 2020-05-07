@@ -7,5 +7,5 @@ dist: xenial
 script: 
   - make
   - git ls-files src/ test/ | xargs clang-format -i && git diff --exit-code
-  - ctest --output-on-failure
+  - ctest --output-on-failure ./bin/test_app
 
