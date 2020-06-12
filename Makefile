@@ -1,4 +1,6 @@
-all: bin/circles_app bin/test_app
+all: bin/circles_app 
+
+test: bin/test_app
 	./bin/test_app
 
 bin/test_app: build/props.o build/scan.o build/main_test.o build/func_tests.o
